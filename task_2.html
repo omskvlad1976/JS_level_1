@@ -1,0 +1,21 @@
+<script charset="utf-8">
+    function countBasketPrice(basket) {
+        let sum = 0;
+        for (let i = 0; i < basket.length; i++) {
+            sum = sum + basket[i][1];
+        }
+        return sum;
+    }
+
+    let basket = [
+        ['Лыжи (190 см)', 9200],
+        ['Палки лыжные (155 см)', 2500],
+        ['Ботинки для лыж (р.44)', 4300],
+        ['Крепление для лыж SNS', 1400],
+    ];
+
+    let a = countBasketPrice(basket);
+
+    console.log('общая сумма корзины: ' + a + ' руб.');
+
+</script>
