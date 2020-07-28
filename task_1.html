@@ -1,0 +1,19 @@
+<script charset="utf-8">
+    let maxNum = 999;
+    let numeral = {
+        number: prompt('Введите любое число от 0 до 999.'),
+        hundredths: 0,
+        tenths: 0,
+        units: 0,
+    };
+    if (numeral.number <= 999) {
+        numeral.hundredths = Math.floor(numeral.number / 100 % 10);
+        numeral.tenths = Math.floor(numeral.number / 10 % 10);
+        numeral.units = Math.floor(numeral.number % 10);
+    } else {
+        numeral.number = 0;
+        console.log('Вы ввели не правильное число!');
+    }
+    console.log(numeral);
+
+</script>

@@ -1,0 +1,39 @@
+<script charset="utf-8">
+    let basket = {
+        products: [],
+        countBasketPrice: function() {
+            let sum = 0;
+            for (let i = 0; i < this.products.length; i++) {
+                sum = sum + this.products[i].price * this.products[i].count;
+            }
+            return sum;
+        }
+    }
+
+    let products = [{
+            name: 'Лыжи (190 см)',
+            price: 9200,
+            count: 1
+        },
+        {
+            name: 'Палки лыжные (155 см)',
+            price: 2500,
+            count: 1
+        },
+        {
+            name: 'Ботинки для лыж (р.44)',
+            price: 4300,
+            count: 1
+        },
+        {
+            name: 'Крепление для лыж SNS',
+            price: 1400,
+            count: 1
+        },
+    ];
+
+    basket.products = products;
+
+    console.log('общая сумма корзины: ' + basket.countBasketPrice());
+
+</script>
