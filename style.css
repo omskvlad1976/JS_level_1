@@ -1,0 +1,26 @@
+  body {
+      margin: 50px;
+  }
+
+  table {
+      border-collapse: collapse;
+  }
+
+  td {
+      height: 50px;
+      width: 50px;
+  }
+
+  .coordinates {
+      text-align: center;
+  }
+
+  .black {
+      background-color: black;
+      border: 1px solid black;
+  }
+
+  .white {
+      background-color: white;
+      border: 1px solid black;
+  }
