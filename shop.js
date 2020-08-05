@@ -1,12 +1,12 @@
 let basket = {
 	// массив товаров в корзине
 	products: [],
-	// возвращент текущее представление корзины
+	// возвращает текущее представление корзины
 	basketText: function () {
 		if (this.products.length == 0) {
 			return "Ваша корзина пуста";
 		} else {
-			return "В корзине: " + this.countBasketCount() + " товаров на сумму " + this.countBasketPrice() + " рублей";
+			return "В корзине: " + this.countBasketCount() + " товар(ов) на сумму " + this.countBasketPrice() + " рублей";
 		}
 	},
 	// возвращает сумму корзины
@@ -106,12 +106,6 @@ function handleCatalogClick(event) {
 			$truck.classList.add("truck");
 			displayText($truck, basket.basketText());
 		}
-		// если нажали на картинку товара
-	} else if (event.target.tagName === "IMG") {
-		// облокируем modalOverlay (display: block;) 
-		$modalOverlay.classList.toggle("closed");
-		// выводим первую картитнку товара 
-		displayProductImg(event.target.dataset.id, 0)
 	}
 }
 
