@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		.truck {
+			text-align: center;
+			padding-top: 100px;
+			font-size: x-large;
+		}
+
+		.catalog {
+			padding-top: 100px;
+		}
+
+		.product {
+			margin: 0 auto;
+			display: flex;
+			width: 600px;
+			justify-content: space-between;
+			padding-bottom: 10px;
+		}
+
+		.productName {
+			width: 200px;
+		}
+
+		.productButton {
+			height: 25px;
+		}
+
+		.productPrise {}
+
+		.productHeadline {
+			font-size: x-large;
+			padding-bottom: 20px;
+		}
+
+		.closed {
+			display: block;
+		}
+
+		.button-Box {
+			margin: 30px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.class-button {
+			font-size: x-large;
+		}
+
+	</style>
+	<script src="shop.js"></script>
+</head>
+
+<body>
+
+	<div id="truck">
+
+	</div>
+
+	<div id="catalog">
+
+	</div>
+	<div class="modal-overlay" id="modal-overlay">
+
+		<div id="modal" class="modal">
+			<div id="modal-img" class="modal-img">
+			</div>
+			<div class="button-Box">
+				<button class="class-button" id="left-button">
+					<<< </button>
+						<button class="class-button" id="close-button">закрыть</button>
+						<button class="class-button" id="right-button">>>></button>
+			</div>
+		</div>
+
+	</div>
+	</div>
+</body>
+
+</html>
